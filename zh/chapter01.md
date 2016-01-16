@@ -32,6 +32,9 @@
 >使用最新的11.0.3版本是在准备本书内容过程中，评估了Angular 2。
 >而WebStorm是从11版本才开始部分支持Angular 2的TypeScript开发。
 
+```
+另：使用哪种编辑器更多的是个人的偏好。如果您有其他喜欢的编辑器，可以自行选择。
+```
 
 ## Chrome
 Chrome浏览器的开发者工具可以极大的方便开发时的调试工作，目前国内大量浏览器也是基于Chrome的开源内核开发，在通用性上也有保证。另外，Chrome上有支持WebStorm的插件“JetBrains IDE Support”。

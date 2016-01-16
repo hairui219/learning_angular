@@ -3,3 +3,33 @@
 我们已经完成了基本的准备工作，从本章开始，我们将专注于学习和应用AngularJS。
 
 作为一个功能完整的框架，AngularJS提供了一套开发理念和方法，我们只需要掌握这套理念和方法即可明确如何实现我们需要的功能。
+
+根据我个人的认知，我设计了如下的学习路线图：
+
+基本语法
+1. AngularJS初始化ng-app
+2. 控制器ng-controller
+3. $scope & data-binding
+4. $scope的功能和按键触发
+6. ng-if / ng-show
+7. ng-repeat
+9. directive
+10. filter
+
+深入学习
+1. 数据获取$http
+2. 如何使用第三方的AngularJS扩充库
+3. ui-route
+4. 页面模板获取和植入
+5. 全局事件监听
+6. 如何调试AngularJS代码
+7. 如何使用自动化测试工具
+
+界面库的引入
+1. Angular-Material
+
+案例实践
+
+1. 登陆、注册
+2. 权限控制
+3. ...
