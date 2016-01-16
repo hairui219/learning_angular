@@ -1,7 +1,7 @@
 项目的创建和配置
 ======
 
-使用WebStorm可以直接创建AngularJS项目，且会自动帮助你配置好项目并自动下载AngularJS等库。但是我们这里讲创建一个新的空项目（Empty Project），然后一步一步的将各个需要的内容填充进来，这样我们会对使用AngularJS开发有一个更好的了解。
+使用WebStorm可以直接创建AngularJS项目，且会自动帮助你配置好项目并自动下载AngularJS等库。但是我们这里将创建一个新的空项目（Empty Project），然后一步一步的将各个需要的内容填充进来，这样我们会对使用AngularJS开发有一个更好的了解。
 
 在WebStorm中，选择File > New Project，然后选择Empty Project，在右边的Location设置好项目的位置，然后点击界面右下角的Create即可。
 
