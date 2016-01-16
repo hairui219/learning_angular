@@ -112,3 +112,19 @@ Learning AngularJS 1.x
 TypeScript的引入我不好评价，但是强类型定义和模型化并不太符合我的业务模式（api一次性获取界面需要的所有数据，这些数据已经在服务端进行好了类型定义和完整性处理，本地主要是实现对CRUD的调用）。
 
 综上，我放弃了在新版本的网站中应用Angular 2技术，而选择继续使用AngularJS 1.x。
+
+版权声明 LICENSE
+======
+
+```
+署名-非商业性使用 4.0 国际
+版权所有 (c) 2016 Harry<harry@andtoo.net>
+本作品采用知识共享 署名-非商业性使用 4.0 国际 许可协议进行许可。访问
+http://creativecommons.org/licenses/by-nc/4.0/ 查看该许可协议。
+
+Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+Copyright (c) 2016 Harry<harry@andtoo.net>
+This work is licensed under the Creative Commons Attribution-NonCommercial 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc/4.0/.
+```
