@@ -66,17 +66,17 @@ angular#1.5.0-rc.0 public\components\angular
 ## 引入AngularJS的库文件
 引入AngularJS库文件很简单，一行HTML语言加入HTML的head部分即可：
 ```html
-<script type="text/javascript" src="components/angular/angular.js"></script>
+<script type="text/JavaScript" src="components/angular/angular.js"></script>
 ```
 
 注：这里引入的angular.js是完整的版本（1M大小），如果在运行环境中，您应该将angular.js替换为angular.min.js（148KB）。
 
-```
-小贴士：
-将js文件放在head部分和body部分有何区别？
 
-放在head部分的javascript文件，会在body渲染完毕后才开始执行。从AngularJS工作的特性来看，推荐所有的javascript文件都放在body部分引入。
-```
+>小贴士：
+>将js文件放在head部分和body部分有何区别？
+>
+>放在head部分的JavaScript文件，会在body渲染完毕后才开始执行。从AngularJS工作的特性来看，推荐所有的JavaScript文件都放在body部分引入。
+
 
 ## 第一个程序Hello World
 是时候来测试下我们是否成功的引入了AngularJS了。我们在<body>元素中加入一个ng-app=""，然后加入一行代码"{{"Hello World!"}}"。如下所示:
@@ -90,7 +90,7 @@ angular#1.5.0-rc.0 public\components\angular
 </head>
 <body ng-app="">
     <h1>{{"Hello World!"}}</h1>
-    <script type="text/javascript" src="components/angular/angular.js"></script>
+    <script type="text/JavaScript" src="components/angular/angular.js"></script>
 </body>
 </html>
 ```
@@ -101,16 +101,17 @@ angular#1.5.0-rc.0 public\components\angular
 ![图3-2 运行index.html](./pic/0302_run_index.png)
 
 
-```
-如果浏览器没有自动打开？
-我在Windows电脑上遇到了相同的问题，请将WebStorm使用管理员权限打开。
-```
+
+>如果浏览器没有自动打开？
+
+>我在Windows电脑上遇到了相同的问题，请将WebStorm使用管理员权限打开。
+
 
 运行效果如下图所示：
 
 ![图3-3 Hello World](./pic/0303_hello_world.png)
 
-看不到“{{”和“}}”，就说明AngularJS已经成功运行起来了！
+看不到“{ {”和“} }”，就说明AngularJS已经成功运行起来了！
 
 如果AngularJS没有成功运行，那么您看到的应该是如下内容：
 
