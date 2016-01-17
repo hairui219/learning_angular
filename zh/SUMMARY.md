@@ -9,3 +9,6 @@
   * [AngularJS初始化 ng-app](chapter04_2.md)
   * [控制器 ng-controller](chapter04_3.md)
   * [数据绑定 data-binding](chapter04_4.md)
+  * [条件判断 ng-if / ng-show / ng-hide](chapter04_5.md)
+  * [重复语句 ng-repeat](chapter04_6.md)
+  * [过滤器 filter](chapter04_7.md)

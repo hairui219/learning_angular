@@ -11,9 +11,10 @@
 2. AngularJS初始化 ng-app
 3. 控制器 ng-controller
 4. 数据绑定 data-binding
-5. ng-if / ng-show / ng-hide
-6. ng-repeat
-7. filter
+5. 条件判断语句ng-if / ng-show / ng-hide
+6. 重复语句 ng-repeat
+7. 过滤器 filter
+8. ng-class
 
 深入学习
 1. directive
