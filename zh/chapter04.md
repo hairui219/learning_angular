@@ -6,15 +6,16 @@
 
 根据我个人的认知，我设计了如下的学习路线图：
 
-基本语法
-1. AngularJS初始化ng-app
-2. 控制器ng-controller
-3. $scope & data-binding
-4. $scope的功能和按键触发
+第四章 基本语法
+1. 基本表达式
+2. AngularJS初始化ng-app
+3. 控制器ng-controller
+4. $scope & data-binding
+5. $scope的功能和按键触发
 6. ng-if / ng-show
 7. ng-repeat
-9. directive
-10. filter
+8. directive
+9. filter
 
 深入学习
 1. 数据获取$http
