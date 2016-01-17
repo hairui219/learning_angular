@@ -8,22 +8,22 @@
 
 第四章 基本语法
 1. 基本表达式
-2. AngularJS初始化ng-app
-3. 控制器ng-controller
+2. AngularJS初始化 ng-app
+3. 控制器 ng-controller
 4. 数据绑定 data-binding
-5. ng-if / ng-show
+5. ng-if / ng-show / ng-hide
 6. ng-repeat
-7. directive
-8. filter
+7. filter
 
 深入学习
-1. 数据获取$http
-2. 如何使用第三方的AngularJS扩充库
-3. ui-route
-4. 页面模板获取和植入
-5. 全局事件监听
-6. 如何调试AngularJS代码
-7. 如何使用自动化测试工具
+1. directive
+2. 数据获取$http
+3. 如何使用第三方的AngularJS扩充库
+4. ui-route
+5. 页面模板获取和植入
+6. 全局事件监听
+7. 如何调试AngularJS代码
+8. 如何使用自动化测试工具
 
 界面库的引入
 1. Angular-Material
