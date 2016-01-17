@@ -16,7 +16,7 @@ var App = angular.module("App", []);
 
 在*index.html*中引入app.js文件，并将ng-app配置进去即可。
 
-```HTML
+```html
 <!DOCTYPE html>
 <html lang="zh" ng-app="App">
 <head>
