@@ -6,4 +6,5 @@
 * [AngularJS的第一步](chapter03.md)
 * [学习和使用AngularJS](chapter04.md)
   * [基本表达式](chapter04_1.md)
-  * [AngularJS初始化ng-app](chapter04_1.md)
+  * [AngularJS初始化ng-app](chapter04_2.md)
+  * [控制器ng-controller](chapter04_3.md)
