@@ -10,12 +10,11 @@
 1. 基本表达式
 2. AngularJS初始化ng-app
 3. 控制器ng-controller
-4. $scope & data-binding
-5. $scope的功能和按键触发
-6. ng-if / ng-show
-7. ng-repeat
-8. directive
-9. filter
+4. 数据绑定 data-binding
+5. ng-if / ng-show
+6. ng-repeat
+7. directive
+8. filter
 
 深入学习
 1. 数据获取$http

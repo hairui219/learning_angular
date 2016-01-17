@@ -45,7 +45,7 @@ App.controller("FirstCtrl", function($scope){
 
 刷新页面，我们可以看到运行的效果:
 
-![图4-1 ng-controller运行结果](./pic/0402_ng-controller.png)
+![图4-2 ng-controller运行结果](./pic/0402_ng-controller.png)
 
 下面，我们再来分析下ng-controller的具体形式：
 
