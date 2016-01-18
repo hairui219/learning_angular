@@ -14,7 +14,7 @@ $scope.data = {
 ```
 将以下代码放置在FirstCtrl中
 ```html
-<input type="checkbox" ng-model="data.flag">通过复选框来控制文字是否显示</input>
+<input type="checkbox" ng-model="data.flag">通过复选框来控制文字是否显示
 
 <!-- 如果data.flag == true,则显示此段文字-->
 <div ng-if="data.flag">

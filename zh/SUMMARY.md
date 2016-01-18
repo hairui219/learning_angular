@@ -12,3 +12,5 @@
   * [条件判断 ng-if / ng-show / ng-hide](chapter04_5.md)
   * [重复语句 ng-repeat](chapter04_6.md)
   * [过滤器 filter](chapter04_7.md)
+  * [样式选择器 ng-class](chapter04_8.md)
+  * [本章总结](chapter04_summary.md)

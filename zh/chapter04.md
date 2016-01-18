@@ -14,7 +14,7 @@
 5. 条件判断语句ng-if / ng-show / ng-hide
 6. 重复语句 ng-repeat
 7. 过滤器 filter
-8. ng-class
+8. 样式选择器 ng-class
 
 深入学习
 1. directive
@@ -25,6 +25,8 @@
 6. 全局事件监听
 7. 如何调试AngularJS代码
 8. 如何使用自动化测试工具
+
+表单、数据验证
 
 界面库的引入
 1. Angular-Material
