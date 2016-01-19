@@ -90,7 +90,7 @@ scope:{
 
 首先，scope:{}是告诉这个Directive它需要自己存储信息（新建一个$scope)。
 
-info: "=" 这段配置，告诉Directive从HTML标签中，获取名为'people'的属性，并将它的值存储在scope.people中。这样，我们就达到了预期的效果。
+info: "=" 这段配置，告诉Directive从HTML标签中，获取名为'info'的属性，并将它的值存储在scope.info中。这样，我们就达到了预期的效果。
 
 ### 在一个ng-ontroller中放入多个相同的Directive
 下面，我们在FirstCtrl中增加几个人的数据，并将它们通过Directive显示出来：
