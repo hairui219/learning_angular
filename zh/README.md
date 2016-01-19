@@ -11,6 +11,18 @@ Learning AngularJS 1.x
 微信： hharry
 ```
 
+## 本书地址
+
+本书使用GitBook和GitHub托管。
+
+GitBook地址：[hairui219/learning_angular](https://www.gitbook.com/book/hairui219/learning_angular/details)
+
+GitHub地址：[hairui219/learning_angular](https://github.com/hairui219/learning_angular)
+
+## 章节目录
+
+{% include "./SUMMARY.md" %}
+
 ## 本书的读者
 
 本书会介绍如何应用AngularJS，但是本书不会涉及到JavaScript语法以及HTML和CSS的布局模式。因此，本书对读者有一定的前置技术要求：
