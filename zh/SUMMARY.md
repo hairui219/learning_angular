@@ -17,3 +17,4 @@
 - [深入学习AngularJS - Directive](chapter05.md)
   - [制作一个自定义的Directive](chapter05_1.md)
   - [Directive的命名和使用规则](chapter05_2.md)
+  - [让Directive支持传入数据](chapter05_3.md)
