@@ -1,5 +1,4 @@
 # 数据绑定data-binding
-
 上一节我们介绍了如何将ng-controller的数据显示在HTML当中，但是我们如何在html中修改这些数据呢？这一步操作也很简单。
 
 我们先直接看看代码吧！
@@ -56,6 +55,48 @@ App.controller("FirstCtrl", function($scope){
     <input type="button" value="按钮" ng-click="onClick()">
 </div>
 ```
+
 点击按钮，我们即可看到数据通过弹出框显示了出来（onClick函数中的逻辑）。
 
 ![图4-3 ng-click运行结果](./pic/0404_ng-click.png)
+
+## 更多地方的绑定
+除了用于显示信息外，数据绑定还可用于其他地方。比如，下面的例子用于根据输入来调整样式：
+
+```html
+<!DOCTYPE html>
+<html lang="zh" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>{{"学习AngularJS 1.x"}}</title>
+    <style type="text/css">
+        /* 删除线 */
+        .strike {
+            text-decoration: line-through;
+        }
+
+        /* 粗体 */
+        .bold {
+            font-weight: bold;
+        }
+
+        /* 红色 */
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" ng-model="data.style">
+<div class="{{data.style}}">示例文本(可输入strike bold red)来调整样式</div>
+
+<script type="text/javascript" src="components/angular/angular.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
+```
+
+运行效果如下：
+
+![图4-3-1 ng-click运行结果](./pic/0423.png)
