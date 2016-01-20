@@ -202,6 +202,62 @@ App.directive("people", function () {
 
 运行效果：
 
-![图5-7 在Directive中传入字符串](./pic/0508.png)
+![图5-8 在Directive中传入字符串](./pic/0508.png)
 
 可以看到，我们在Directive中传入的数据进行的数据修改，并未反馈到FirstCtrl中。
+
+## 在Directive中进行回调
+上面我们介绍了等号("=")和@符号("@")的使用方法，它们分别对应传入对象和文本。但是，如果我们期望传入一个回调函数呢？这样我们就可以实现如封装一个按钮为一个Directive，然后让它在点击后实现我们期望的功能的效果。
+
+这就需要使用到&符号("&"),下面我们来看看实际的例子(这个例子比较复杂，请仔细分析研读)：
+
+```javascript
+var App = angular.module("App", []);
+
+App.directive("formDirective", function () {
+    return {
+        restrict: "A",
+        scope: {
+            //这里使用&符号来接受传入的函数
+            btnClick: "&"
+            //注意:这里没有加入下方的value模型
+        },
+        template:
+        //一个用于输入文字的输入框，绑定到value上
+        "<input type='text' ng-model='value'><br>" +
+            //提交的按钮，绑定上方scope的btnClick方法
+            //注意传入参数的方式和HTML中具体使用的方式
+        "<input type='button' value='提交'  ng-click='btnClick({message:value})'>"
+    }
+});
+
+App.controller("FirstCtrl", function ($scope) {
+    $scope.clickBtnCallback = function (msg) {
+        alert("点击了按钮!信息是：" + msg);
+    }
+});
+```
+
+对应的HTML代码：
+
+```html
+<!DOCTYPE html>
+<html lang="zh" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>{{"学习AngularJS 1.x"}}</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div ng-controller="FirstCtrl">
+        <!-- 注意这里绑定btn-click/btnClick中传入的参数的命名 -->
+        <div form-directive btn-click="clickBtnCallback(message)"></div>
+</div>
+
+<script type="text/javascript" src="components/angular/angular.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
+```
+
+![图5-8 在Directive中传入函数和数据回传](./pic/0508.png)
