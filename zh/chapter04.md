@@ -1,5 +1,4 @@
 # 学习AngularJS的规划
-
 我们已经完成了基本的准备工作，从本章开始，我们将专注于学习和应用AngularJS。
 
 作为一个功能完整的框架，AngularJS提供了一套开发理念和方法，我们只需要掌握这套理念和方法即可明确如何实现我们需要的功能。
@@ -14,7 +13,9 @@
 5. 条件判断语句ng-if / ng-show / ng-hide
 6. 重复语句 ng-repeat
 7. 过滤器 filter
-8. 样式选择器 ng-class
+8. 样式选择器 ng-class/ng-style
+9. 下拉列表选项 ng-options
+10. 引入ng-include和模板ng-template
 
 深入学习
 1. directive
@@ -32,7 +33,6 @@
 1. Angular-Material
 
 案例实践
-
 1. 登陆、注册
 2. 权限控制
 3. ...

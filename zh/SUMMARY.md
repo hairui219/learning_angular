@@ -11,7 +11,9 @@
   - [条件判断 ng-if / ng-show / ng-hide](chapter04_5.md)
   - [重复语句 ng-repeat](chapter04_6.md)
   - [过滤器 filter](chapter04_7.md)
-  - [样式选择器 ng-class](chapter04_8.md)
+  - [样式选择器 ng-class/ng-style](chapter04_8.md)
+  - [下拉列表选项 ng-options](chapter04_9.md)
+  - [引入ng-include和模板ng-template](chapter04_10.md)
   - [本章总结](chapter04_summary.md)
 
 - [深入学习AngularJS - Directive](chapter05.md)
