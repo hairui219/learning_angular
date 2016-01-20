@@ -1,5 +1,4 @@
 # 过滤器 filter
-
 过滤器是AngularJS的另一项强大的功能，如果能使用好它，能够帮助我们极大的节省工作量。
 
 以下是几个应用filter的例子：
@@ -23,18 +22,17 @@
 
 以上都是AngularJS的常用用法，具体的系统自带的filter的列表，我们可以从[官方网站](https://docs.angularjs.org/api/ng/filter)上获取。这里对管网提供的功能进行一个简要列表：
 
-| Filter名称 |  示例用法 |  说明 |
-|:-:|:-:|---|
-| filter  | -  | 传入自定义的函数作为过滤器 |
-| currency  |   currency / currency:"人民币￥":0 | 转化为货币后输出。可选货币单位和保留小数位数。 |
-|  number | number / number:2  | 将数字转化为文本，自动加逗号。可选设置小数位数。|
-| date | data : format : timezone | 将时间转化到对应的格式和时区 |
-| json | json | 将对象转化为Json格式内容输出 |
-| lowercase | lowercase | 将文本转化为小写 |
-| uppercase | uppercase | 将文本转化为大写 |
-| limitTo | limitTo : limit : begin | 截取array从begin位置开始的limit个元素 |
-| orderBy | orderBy : expression : reverse | 根据expression的条件对list进行排序，reverse可选，设置为true则反过来排 |
-
+Filter名称  | 示例用法                           | 说明
+:-------: | :----------------------------: | -----------------------------------------------
+filter    | -                              | 传入自定义的函数作为过滤器
+currency  | currency / currency:"人民币￥":0   | 转化为货币后输出。可选货币单位和保留小数位数。
+number    | number / number:2              | 将数字转化为文本，自动加逗号。可选设置小数位数。
+date      | data : format : timezone       | 将时间转化到对应的格式和时区
+json      | json                           | 将对象转化为Json格式内容输出
+lowercase | lowercase                      | 将文本转化为小写
+uppercase | uppercase                      | 将文本转化为大写
+limitTo   | limitTo : limit : begin        | 截取array从begin位置开始的limit个元素
+orderBy   | orderBy : expression : reverse | 根据expression的条件对list进行排序，reverse可选，设置为true则反过来排
 
 ## 多个filter同时应用
 AngularJS支持多个filter同时应用，比如以下的例子：
@@ -43,13 +41,13 @@ AngularJS支持多个filter同时应用，比如以下的例子：
 {{ list | orderBy:'name' | json }}
 //对list的内容进行排序后输出成json文本，结果为
 //[ { "name": "Harry" }, { "name": "Jerry" }, { "name": "Tom" } ]
-
 ```
 
 ## 创建自己的过滤器
 自己创建自定义的过滤器也很简单，我们下面尝试自己制作一个将文字全部翻转过来的过滤器。
 
-在*app.js*中增加如下代码：
+在_app.js_中增加如下代码：
+
 ```javascript
 //app.js
 App.filter("reverse", function(){
@@ -59,7 +57,7 @@ App.filter("reverse", function(){
 });
 ```
 
-同时，我们利用最早的Hello World的例子，将我们定义的“reverse”这个过滤器应用上去，代码如下：
+同时，我们利用最早的Hello World的例子，将我们定义的"reverse"这个过滤器应用上去，代码如下：
 
 ```html
 <div ng-controller="FirstCtrl">
