@@ -1,5 +1,5 @@
 # Directive的命名和使用规则
-在前一节中，我们创建了一个名为"people"的Directive。并且通过 < people> < /people> 使用了它。
+在前一节中，我们创建了一个名为"people"的Directive。并且通过 `<people> </people>` 使用了它。
 
 但是，在实际应用场景中，我们的命名通常不止1个单词，这时候我们就需要注意Directive的命名和使用规则。
 
