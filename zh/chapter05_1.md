@@ -50,7 +50,7 @@ App.controller("FirstCtrl", function ($scope) {
 ```javascript
 App.directive("people", function(){
     return {
-        restrict: "E",
+        restrict : "E",
         template : "<p>姓名:{{data.name}}</p><p>性别：{{data.sex}}</p>"
     }
 });
@@ -86,13 +86,22 @@ template相对比较容易理解，在运行网页时，HTML对应的标签，�
 
 ![图5-2 Directive生效后的html代码](./pic/0502.png)
 
-可以看到，AngularJS在
+可以看到，AngularJS在`<people></people>`中间加入了template中的内容。
 
-```html
-<people></people>
+#### 用替换而不是插入的方式应用Directive
+如果在配置Directive时，加入`replace : true`（与`restrict`和`template`同级别），则可以让AngularJS用替换的模式应用Directive。
+
+```javascript
+App.directive("people", function(){
+    return {
+        restrict : "E",
+        replace : true,
+        template : "<p>姓名:{{data.name}}</p><p>性别：{{data.sex}}</p>"
+    }
+});
 ```
 
-中间加入了template中的内容。
+具体的效果，是会去除掉`<people> </people>`这对标签。
 
 ### restrict
 restrict是告诉AngularJS，这个Directive应该如何使用。
@@ -100,10 +109,10 @@ restrict是告诉AngularJS，这个Directive应该如何使用。
 下面这个表格，总结了restrict可能有的值，具体的每种应用方案，我们将在下一节详解。
 
 值   | 对应类型      | 使用方法
---- | --------- | ---------------------------------
-E   | element   | &lt;people> &lt;/people>
-A   | attribute | &lt;div people> &lt;/div>
-C   | class     | &lt;div class="people"> &lt;/div>
+--- | --------- | -----------------------------
+E   | element   | `<people> </people>`
+A   | attribute | `<div people> </div>`
+C   | class     | `<div class="people"> </div>`
 EAC | -         | 以上三种都可使用
 
 如果在restrict中设定了使用方法，而在HTML代码中却未按照对应的方法使用，那么代码将不会生效！
