@@ -89,6 +89,8 @@ bower install jquery --save
 ### 实际体验`element`的功能
 我们在引入jQuery后，可以通过如下代码查看效果：
 
+> 这里需要注意的是，使用jqLite的方法和以下代码中使用的方法是不一样的，因为jqLite不支持通过标签方式获取子元素。如果您有兴趣学习jqLite的使用方法（并且拥有一定的英文阅读能力），可以在[这里](https://docs.angularjs.org/api/ng/function/angular.element)查看官方文档。
+
 ```javascript
 App.directive("formDirective", function () {
     return {
