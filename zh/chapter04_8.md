@@ -1,10 +1,10 @@
-# 样式选择器 ng-class/ng-style
-## ng-class
-通过ng-class，我们可以对界面元素的css样式进行控制。下面，让我们通过示例来看看功能如何实现：
+# 样式选择器 `ng-class`/`ng-style`
+## `ng-class`
+通过`ng-class`，我们可以对界面元素的css样式进行控制。下面，让我们通过示例来看看功能如何实现：
 
 > 此示例来源于官网的[ngClass介绍界面](),我进行了一些加工。
 
-首先，我们先创建一个style.css文件。
+首先，我们先创建一个`style.css`文件。
 
 ```css
 /* 删除线 */
@@ -34,7 +34,7 @@
 }
 ```
 
-修改FirstCtrl为如下代码：
+修改`FirstCtrl`为如下代码：
 
 ```javascript
 //app.js
@@ -47,7 +47,7 @@ App.controller("FirstCtrl", function ($scope) {
 });
 ```
 
-并在_index.html_的head部分将css文件引入，并加入对应的代码。全部代码如下：
+并在`index.html`的`<head>`部分将css文件引入，并加入对应的代码。全部代码如下：
 
 ```html
 <!DOCTYPE html>
@@ -166,8 +166,8 @@ App.controller("FirstCtrl", function ($scope) {
 
 由于动画效果无法通过截图表示，还请读者自行测试。
 
-## ng-style
-ng-style提供的功能比ng-class要少一些，只支持样式的传入。我们可以使用以下两种模式：
+## `ng-style`
+`ng-style`提供的功能比`ng-class`要少一些，只支持样式的传入。我们可以使用以下两种模式：
 
 ```html
 <span ng-style="{'background-color':colorInput}">示例文本</span>

@@ -1,5 +1,5 @@
 # 制作一个自定义的Directive
-下面我们将制作我们的第一个自定义Directive。让我们对_app.js_和_index.html_进行一些修改：
+下面我们将制作我们的第一个自定义Directive。让我们对`app.js`和`index.html`进行一些修改：
 
 ```javascript
 //app.js
@@ -58,13 +58,13 @@ App.directive("people", function(){
 
 我们将这段代码分拆开逐步讲解:
 
-首先，声明一个Directive的基本结构如下，我们调用了directive()函数来告诉AngularJS加入一个新的Directive：
+首先，声明一个Directive的基本结构如下，我们调用了`directive()`函数来告诉AngularJS加入一个新的Directive：
 
 ```javascript
 App.directive();
 ```
 
-调用这个函数，我们需要传入2个参数，第一个参数是Directive的命名（这里是"people")，第二个参数是需要进行的操作。
+调用这个函数，我们需要传入2个参数，第一个参数是Directive的命名（这里是`people`)，第二个参数是这个Directive的功能。
 
 ```javascript
 App.directive("people", function(){});
@@ -79,10 +79,10 @@ return {
 }
 ```
 
-这个对象中有两个元素，restrict和template。
+这个对象中有两个元素，`restrict`和`template`。
 
-### template
-template相对比较容易理解，在运行网页时，HTML对应的标签，将被替换成对应的内容。我们这里看看替换后实际的HTML代码如何：
+### `template`
+`template`相对比较容易理解，在运行网页时，HTML对应的标签，将被替换成对应的内容。我们这里看看替换后实际的HTML代码如何：
 
 ![图5-2 Directive生效后的html代码](./pic/0502.png)
 
@@ -103,8 +103,8 @@ App.directive("people", function(){
 
 具体的效果，是会去除掉`<people> </people>`这对标签。
 
-### restrict
-restrict是告诉AngularJS，这个Directive应该如何使用。
+### `restrict`
+`restrict`是告诉AngularJS，这个Directive应该如何使用。
 
 下面这个表格，总结了restrict可能有的值，具体的每种应用方案，我们将在下一节详解。
 

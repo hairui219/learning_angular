@@ -7,18 +7,18 @@
 
 第四章 基本语法
 1. 基本表达式
-2. AngularJS初始化 ng-app
-3. 控制器 ng-controller
+2. AngularJS初始化 `ng-app`
+3. 控制器 `ng-controller`
 4. 数据绑定 data-binding
-5. 条件判断语句ng-if / ng-show / ng-hide
-6. 重复语句 ng-repeat
-7. 过滤器 filter
-8. 样式选择器 ng-class/ng-style
-9. 下拉列表选项 ng-options
-10. 引入ng-include和模板ng-template
+5. 条件判断语句`ng-if` / `ng-show` / `ng-hide`
+6. 重复语句 `ng-repeat`
+7. 过滤器 `filter`
+8. 样式选择器 `ng-class`/`ng-style`
+9. 下拉列表选项 `ng-options`
+10. 引入`ng-include`和模板`ng-template`
 
 深入学习
-1. directive
+1. `Directive`
 2. 数据获取$http
 3. 如何使用第三方的AngularJS扩充库
 4. ui-route

@@ -1,7 +1,7 @@
-# 过滤器 filter
+# 过滤器 `filter`
 过滤器是AngularJS的另一项强大的功能，如果能使用好它，能够帮助我们极大的节省工作量。
 
-以下是几个应用filter的例子：
+以下是几个应用`filter`的例子：
 
 ```javascript
 {{ 1234 | number:2 }}
@@ -20,7 +20,7 @@
 //结果为显示顺序Harry,Jerry,Tom
 ```
 
-以上都是AngularJS的常用用法，具体的系统自带的filter的列表，我们可以从[官方网站](https://docs.angularjs.org/api/ng/filter)上获取。这里对管网提供的功能进行一个简要列表：
+以上都是AngularJS的常用用法，具体的系统自带的`filter`的列表，我们可以从[官方网站](https://docs.angularjs.org/api/ng/filter)上获取。这里对管网提供的功能进行一个简要列表：
 
 Filter名称  | 示例用法                           | 说明
 :-------: | :----------------------------: | -----------------------------------------------
@@ -46,7 +46,7 @@ AngularJS支持多个filter同时应用，比如以下的例子：
 ## 创建自己的过滤器
 自己创建自定义的过滤器也很简单，我们下面尝试自己制作一个将文字全部翻转过来的过滤器。
 
-在_app.js_中增加如下代码：
+在`app.js`中增加如下代码：
 
 ```javascript
 //app.js
@@ -57,7 +57,7 @@ App.filter("reverse", function(){
 });
 ```
 
-同时，我们利用最早的Hello World的例子，将我们定义的"reverse"这个过滤器应用上去，代码如下：
+同时，我们利用最早的Hello World的例子，将我们定义的`reverse`这个过滤器应用上去，代码如下：
 
 ```html
 <div ng-controller="FirstCtrl">

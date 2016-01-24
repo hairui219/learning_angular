@@ -1,5 +1,5 @@
 # 数据绑定data-binding
-上一节我们介绍了如何将ng-controller的数据显示在HTML当中，但是我们如何在html中修改这些数据呢？这一步操作也很简单。
+上一节我们介绍了如何将`ng-controller`的数据显示在HTML当中，但是我们如何在页面中修改这些数据呢？这一步操作也很简单。
 
 我们先直接看看代码吧！
 
@@ -56,7 +56,7 @@ App.controller("FirstCtrl", function($scope){
 </div>
 ```
 
-点击按钮，我们即可看到数据通过弹出框显示了出来（onClick函数中的逻辑）。
+点击按钮，我们即可看到数据通过弹出框显示了出来（`onClick`函数中的逻辑）。
 
 ![图4-3 ng-click运行结果](./pic/0404_ng-click.png)
 

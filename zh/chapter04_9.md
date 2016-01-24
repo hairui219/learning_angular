@@ -1,13 +1,13 @@
-# 下拉列表选项 ng-options
-在学习了ng-repeat过后，我们其实已经可以用循环的方式实现下拉列表的选项。但是，AngularJS提供了ng-options的方法，让我们能够更轻松的完成这项工作。
+# 下拉列表选项 `ng-options`
+在学习了`ng-repeat`过后，我们其实已经可以用循环的方式实现下拉列表的选项。但是，AngularJS提供了`ng-options`的方法，让我们能够更轻松的完成这项工作。
 
 官网提供了一个详尽的[示例](https://docs.angularjs.org/api/ng/directive/ngOptions)进行演示(点击打开后滑动到页面最下部进行效果测试)，本节中的内容，是将官网的内容进行梳理后进行的讲解。
 
-ng-options提供了很多功能用来梳理或筛选下拉列表的选项。我们将分别学习它们。
+`ng-options`提供了很多功能用来梳理或筛选下拉列表的选项。我们将分别学习它们。
 
-首先，让我们学习下如何使用ng-options。这里，我们期望实现的是，使用下拉列表，让页面上的一个方块的颜色对应变化：
+首先，让我们学习下如何使用`ng-options`。这里，我们期望实现的是，使用下拉列表，让页面上的一个方块的颜色对应变化：
 
-我们首先配置一个颜色的列表，并且在$scope中存储一个用于保存选中状态的变量，将它的默认值设置为颜色列表的第一个：
+我们首先配置一个颜色的列表，并且在`$scope`中存储一个用于保存选中状态的变量，将它的默认值设置为颜色列表的第一个：
 
 ```javascript
 App.controller("FirstCtrl", function ($scope) {
@@ -46,7 +46,7 @@ App.controller("FirstCtrl", function ($scope) {
 
  ![图4-18 ng-options运行效果](./pic/0418.png)
 
-颜色根据选中状态变化，利用到了ng-model和ng-style的特性。下面，我们将仔细讲解ng-options中的语法：
+颜色根据选中状态变化，利用到了`ng-model`和`ng-style`的特性。下面，我们将仔细讲解`ng-options`中的语法：
 - `color.name`
   - 用于显示在下拉框中的名称
 
@@ -64,8 +64,8 @@ App.controller("FirstCtrl", function ($scope) {
 
 ![图4-19 ng-options加上空选项](./pic/0419.png)
 
-## 按组排列group by
-ng-options也支持按组排列数据，使用order by语法，下面我们看看例子：
+## 按组排列`group by`
+`ng-options`也支持按组排列数据，使用`group by`语法，下面我们看看例子：
 
 首先，我们在列表中增加类型字段：
 
@@ -89,10 +89,10 @@ $scope.colors = [
 
 ![图4-20 ng-options加上group by](./pic/0420.png)
 
-## 禁用某些选项disable when
-ng-options还可以通过when语法来设置选项是否可选，同样的，我们需要在列表中先新增字段：
+## 禁用某些选项`disable when`
+`ng-options`还可以通过`disable when`语法来设置选项是否可选，同样的，我们需要在列表中先新增字段：
 
-**注意**，以下第一列数据并未加上disabled属性，这是为了表明如果没有这项数据，默认的ng-options的操作（可以选择）。
+**注意**，以下第一列数据并未加上`disabled`属性，这是为了表明如果没有这项数据，默认的`ng-options`的操作（可以选择）。
 
 ```javascript
 $scope.colors = [
@@ -104,7 +104,7 @@ $scope.colors = [
 ];
 ```
 
-然后修改ng-options的语法：
+然后修改`ng-options`的语法：
 
 ```html
 <select ng-model="colorChosen"
@@ -119,9 +119,9 @@ $scope.colors = [
 ![图4-21 ng-options加上disable when](./pic/0421.png)
 
 ## 将对象作为参数传入
-在上面的例子中，我们传入的是一个列表array。ng-options也支持以对象object的方式传入数据：
+在上面的例子中，我们传入的是一个列表`array`。`ng-options`也支持以对象`object`的方式传入数据：
 
-使用object的方式传入数据，一般是为了简化配置，比如我们采取如下的配置：
+使用`object`的方式传入数据，一般是为了简化配置，比如我们采取如下的配置：
 
 ```javascript
 $scope.countries = {
@@ -134,7 +134,7 @@ $scope.countries = {
 $scope.country = 'CN';
 ```
 
-注意，以下代码中，for后面有一个**空格**。如果没有，则无法成功运行！这是因为传入ng-options的其实是一串文本，而AngularJS需要解析这段文本，因此提出了对格式的要求。
+注意，以下代码中，for后面有一个**空格**。如果没有，则无法成功运行！这是因为传入`ng-options`的其实是一串文本，而AngularJS需要解析这段文本，因此提出了对格式的要求。
 
 ```html
 <div ng-controller="FirstCtrl">
