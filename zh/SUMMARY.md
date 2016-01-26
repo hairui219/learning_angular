@@ -21,3 +21,7 @@
   - [Directive的命名和使用规则](chapter05_2.md)
   - [让Directive支持传入数据](chapter05_3.md)
   - [使用templateUrl获取模板](chapter05_4.md)
+  - [让Directive动起来`link()`](chapter05_5.md)
+  - [把Directive变为一个容器`transclude`](chapter05_6.md)
+  - [Directive之间互相通讯](chapter05_7.md)
+  - [本章总结](chapter05_summary.md)
