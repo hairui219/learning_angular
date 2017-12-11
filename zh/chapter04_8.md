@@ -64,12 +64,12 @@ App.controller("FirstCtrl", function ($scope) {
 <div ng-controller="FirstCtrl">
 
     <!-- 此处放置了ng-class，并设定了每个样式激活时的条件（对应下方3个复选框）-->
-    <p ng-class="{strike: deleted, bold: important, 'has-error': error}">示例文字</p>
-    <input type="checkbox" ng-model="deleted">
+    <p ng-class="{strike: data.deleted, bold: data.important, 'has-error': data.error}">示例文字</p>
+    <input type="checkbox" ng-model="data.deleted">
         选中后上方文字将加上删除线（style中加上strike类） <br>
-    <input type="checkbox" ng-model="important">
+    <input type="checkbox" ng-model="data.important">
         选中后上方文字将变化为粗体（style中加上bold类） <br>
-    <input type="checkbox" ng-model="error">
+    <input type="checkbox" ng-model="data.error">
         选中后上方文字将变红，背景变黄（style中加上has-error类）
 </div>
 
@@ -154,11 +154,11 @@ App.controller("FirstCtrl", function ($scope) {
 
 ```html
 <div ng-controller="FirstCtrl">
-    <input type="button" value="开始动画" ng-click="style='animate'">
+    <input type="button" value="开始动画" ng-click="data.style='animate'">
     <br>
-    <input type="button" value="恢复原始" ng-click="style=''">
+    <input type="button" value="恢复原始" ng-click="data.style=''">
     <br>
-    <span class="base-class" ng-class="style">示例文本</span>
+    <span class="base-class" ng-class="data.style">示例文本</span>
 </div>
 ```
 
@@ -170,10 +170,10 @@ App.controller("FirstCtrl", function ($scope) {
 `ng-style`提供的功能比`ng-class`要少一些，只支持样式的传入。我们可以使用以下两种模式：
 
 ```html
-<span ng-style="{'background-color':colorInput}">示例文本</span>
+<span ng-style="{'background-color':data.colorInput}">示例文本</span>
 //colorInput为$scope中的对象，传入文本即可
 
-<span ng-style="styleText">示例文本</span>
+<span ng-style="data.styleText">示例文本</span>
 //styleText为样式为 '{'color':red}'类型的文本
 ```
 
@@ -203,12 +203,12 @@ data-ng-style="{'background-image':'url(img/products/{{product.img}})'}"
 下面，我们通过官网的[示例](https://docs.angularjs.org/api/ng/directive/ngStyle)来看看如何传入文本：
 
 ```html
-<input type="button" value="设置字体颜色为红色" ng-click="myStyle={color:'red'}">
-<input type="button" value="设置背景颜色" ng-click="myStyle={'background-color':'blue'}">
-<input type="button" value="清除样式" ng-click="myStyle={}">
+<input type="button" value="设置字体颜色为红色" ng-click="data.myStyle={color:'red'}">
+<input type="button" value="设置背景颜色" ng-click="data.myStyle={'background-color':'blue'}">
+<input type="button" value="清除样式" ng-click="data.myStyle={}">
 <br>
-<span ng-style="myStyle">示例文本</span>
-<pre>当前样式为{{myStyle}}</pre>
+<span ng-style="data.myStyle">示例文本</span>
+<pre>当前样式为{{data.myStyle}}</pre>
 ```
 
 运行效果为：
